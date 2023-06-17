@@ -1,18 +1,18 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Text, StyleSheet, View} from 'react-native';
 import {Provider} from 'react-redux';
 import {store} from './src/redux/store';
+import HomeScreen from './src/screens/HomeScreen';
 
-export default class App extends Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <View>
-          <Text> textInComponent!! </Text>
-        </View>
-      </Provider>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Provider store={store}>
+      <View>
+        <HomeScreen />
+      </View>
+    </Provider>
+  );
+};
 
+export default App;
 const styles = StyleSheet.create({});
