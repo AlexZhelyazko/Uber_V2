@@ -26,6 +26,7 @@ const data = [
 const NavOptions = () => {
   return (
     <FlatList
+      horizontal
       data={data}
       keyExtractor={item => item.id}
       renderItem={({item}) => (
