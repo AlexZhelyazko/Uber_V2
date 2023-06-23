@@ -1,8 +1,12 @@
 import React from 'react';
-import {Text, StyleSheet} from 'react-native';
+import {Text, StyleSheet, View} from 'react-native';
 
 const MapScreen = () => {
-  return <Text>G</Text>;
+  return (
+    <View>
+      <Text>G</Text>
+    </View>
+  );
 };
 export default MapScreen;
 
