@@ -1,3 +1,4 @@
+import {RightOutlined} from '@ant-design/icons';
 import React from 'react';
 import {
   Text,
@@ -7,6 +8,7 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
+import {Icon} from 'react-native-elements';
 import tw from 'tailwind-react-native-classnames';
 
 const data = [
@@ -37,7 +39,14 @@ const NavOptions = () => {
               style={{width: 120, height: 120, resizeMode: 'contain'}}
               source={{uri: item.image}}
             />
-            <Text>{item.title}</Text>
+            <Text style={tw`ml-2 text-lg font-semibold`}>{item.title}</Text>
+            <Icon
+              style={tw`p-2 bg-black rounded-full w-12 mt-4`}
+              color="white"
+              name="arrowright"
+              type="antdesign"
+              component={RightOutlined}
+            />
           </View>
         </TouchableOpacity>
       )}
